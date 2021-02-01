@@ -1,10 +1,10 @@
-package com.app.pathfinder;
+package com.app.path_finder;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class PathfinderApplicationTests {
+class PathFinderApplicationTests {
 
 	@Test
 	void contextLoads() {

@@ -1,13 +1,13 @@
-package com.app.pathfinder;
+package com.app.path_finder;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class PathfinderApplication {
+public class PathFinderApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(PathfinderApplication.class, args);
+		SpringApplication.run(PathFinderApplication.class, args);
 	}
 
 }
