@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-	안녕ff!
+	안녕!
 </body>
 </html>
