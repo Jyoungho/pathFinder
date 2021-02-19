@@ -23,6 +23,7 @@
                     <input class="form-control" type="text" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2" />
                     <div class="input-group-append">
                         <button class="btn btn-primary" type="button"><i class="fas fa-search"></i></button>
+                        vscode git test
                     </div>
                 </div>
             </form>
