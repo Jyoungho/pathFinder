@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+.header-height {
+  height : 58px;
+}
+
+.content-container{
+  max-width : 770px;
+  padding : 1em;
+}
+
+.header-title-center {
+    height : auto;
+    width: 100%;
+    text-align: center;
+    color : white;
+}
+
+.content-title{
+  text-align: center;
+  border-bottom: solid black;
+}
