@@ -89,7 +89,7 @@
                                 </nav>
                             </div>
                             
-                            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#freeBoard" aria-expanded="true" aria-controls="collapseLayouts">
+                            <a class="nav-link" href="#" data-toggle="collapse" data-target="#freeBoard" aria-expanded="true" aria-controls="collapseLayouts">
                                 <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
                                 자유게시판
                                 <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
