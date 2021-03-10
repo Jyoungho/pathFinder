@@ -116,7 +116,100 @@
             
             <div id="layoutSidenav_content">
                 <main>
-                	htmlCss
+                	
+                	<div class="container-fluid content-container">
+                        <h1 class="mt-4 content-title">Youtube</h1>
+                        <p></p>
+                        <div class = "row">
+                            <div class = "col-xl-4 col-md-4">
+                                <div class = "card bg-primary bg-light ">
+                                    <div class = "card-body">이미지</div>
+                                    <div class = "card-footer">링크</div>
+                                </div>
+                            </div>
+                            <div class = "col-xl-4 col-md-4">
+                                <div class = "card bg-primary bg-light">
+                                    <div class = "card-body">이미지</div>
+                                    <div class = "card-footer">링크</div>
+                                </div>
+                            </div>
+                            <div class = "col-xl-4 col-md-4">
+                                <div class = "card bg-primary bg-light">
+                                    <div class = "card-body">이미지</div>
+                                    <div class = "card-footer">링크</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h1 class="mt-4 content-title">블로그</h1>
+                        <p></p>
+                        <div class = "row">
+                            <div class = "col-xl-4 col-md-4">
+                                <div class = "card bg-primary bg-light">
+                                    <div class = "card-body">이미지</div>
+                                    <div class = "card-footer">링크</div>
+                                </div>
+                            </div>
+                            <div class = "col-xl-4 col-md-4">
+                                <div class = "card bg-primary bg-light">
+                                    <div class = "card-body">이미지</div>
+                                    <div class = "card-footer">링크</div>
+                                </div>
+                            </div>
+                            <div class = "col-xl-4 col-md-4">
+                                <div class = "card bg-primary bg-light">
+                                    <div class = "card-body">이미지</div>
+                                    <div class = "card-footer">링크</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h1 class="mt-4 content-title">인터넷 강의</h1>
+                        <p></p>
+                        <div class = "row">
+                            <div class = "col-xl-4 col-md-4">
+                                <div class = "card bg-primary bg-light">
+                                    <div class = "card-body">이미지</div>
+                                    <div class = "card-footer">링크</div>
+                                </div>
+                            </div>
+                            <div class = "col-xl-4 col-md-4">
+                                <div class = "card bg-primary bg-light">
+                                    <div class = "card-body">이미지</div>
+                                    <div class = "card-footer">링크</div>
+                                </div>
+                            </div>
+                            <div class = "col-xl-4 col-md-4">
+                                <div class = "card bg-primary bg-light">
+                                    <div class = "card-body">이미지</div>
+                                    <div class = "card-footer">링크</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h1 class="mt-4 content-title">자극영상</h1>
+                        <p></p>
+                        <div class = "row">
+                            <div class = "col-xl-4 col-md-4">
+                                <div class = "card bg-primary bg-light">
+                                    <div class = "card-body">이미지</div>
+                                    <div class = "card-footer">링크</div>
+                                </div>
+                            </div>
+                            <div class = "col-xl-4 col-md-4">
+                                <div class = "card bg-primary bg-light">
+                                    <div class = "card-body">이미지</div>
+                                    <div class = "card-footer">링크</div>
+                                </div>
+                            </div>
+                            <div class = "col-xl-4 col-md-4">
+                                <div class = "card bg-primary bg-light">
+                                    <div class = "card-body">이미지</div>
+                                    <div class = "card-footer">링크</div>
+                                </div>
+                            </div>
+                        </div>
+                	
                 </main>
                 
                 <footer class="py-4 bg-light mt-auto">
