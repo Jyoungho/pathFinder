@@ -13,7 +13,7 @@
         <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js" crossorigin="anonymous"></script>
     </head>
-    <body class="sb-nav-fixed sb-sidenav-toggled">
+    <body class="sb-nav-fixed">
     
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
             <a class="navbar-brand" href="index.html">Pathfinder</a>
@@ -56,13 +56,13 @@
                             
                             <div class="sb-sidenav-menu-heading">Home</div>
                             
-                            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#Front-End" aria-expanded="false" aria-controls="collapseLayouts">
+                            <a class="nav-link" href="#" data-toggle="collapse" data-target="#Front-End" aria-expanded="true" aria-controls="collapseLayouts">
                                 <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
                                 Front-End
                                 <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                             </a>
                             
-                            <div class="collapse" id="Front-End" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
+                            <div class="collapse show" id="Front-End" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
                                     <a class="nav-link" href="/htmlCss">HTML/CSS</a>
                                     <a class="nav-link" href="/javaScript">JavaScript</a>
@@ -97,7 +97,7 @@
                             
                             <div class="collapse" id="freeBoard" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="/boardfrontEnd">Front-End</a>
+                                    <a class="nav-link" href="/boardFrontEnd">Front-End</a>
                                     <a class="nav-link" href="/boardBackEnd">Back-End</a>
                                     <a class="nav-link" href="/boardStudy">Study</a>
                                     <a class="nav-link" href="/boardCommunity">Community</a>
@@ -116,24 +116,7 @@
             
             <div id="layoutSidenav_content" style="margin-left:0px;">
                 <main>
-                	<div style="position:fixed; left:0px; right:0px; top:0px; bottom:0px; background-image: url('assets/img/home-background.jpg'); background-repeat: no-repeat; background-size: 100% 100%;"></div>
-                	
-                 	<div style="position:fixed; left:0px; right:0px; top:0px; bottom:0px; background-color:rgba(0,0,0,0.5);">
-	                   	<div style="position:absolute; left:0px; right:0px; top:100px; bottom:50%;">
-	                   		<h1 style="color:white; text-align:center; font-size:65px;"><a href="/main" style="color:inherit;">Pathfinder</a></h1>
-	                   	</div>
-	                    <div style="position:absolute; left:0px; right:0px; top:67%; bottom:0px;">
-	                    	<h3 style="color:gray; text-align:center;">개척자</h3>
-	                    	<h2 style="color:white; text-align:center;">거친 땅을 일구어 쓸모 있는 땅으로 만드는 사람.</h2>
-	                    	<h3 style="color:white; text-align:center;">홈페이지 설명 내용</h3>
-	                    	<h4 style="color:gray; text-align:center;">April 28, 2021</h4>
-	                    </div>
-                    </div>
-                    <div style="position:absolute; left:0px; right:0px; top:95%; height:1000px; background-color:white; text-align:center;">
-                    	<div style="position:absolute; left:0px; right:0px; height:50px;">
-                    		<img src="assets/img/arrow_up.png" style="vertical-align:-webkit-baseline-middle;"/>
-                    	</div>
-                    </div>
+                	reactAngularView
                 </main>
                 
                 <footer class="py-4 bg-light mt-auto">
