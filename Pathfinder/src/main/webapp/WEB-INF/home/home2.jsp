@@ -114,25 +114,27 @@
                 </nav>
             </div>
             
-            <div id="layoutSidenav_content" style="margin-left:0px;">
+            <div id="layoutSidenav_content">
                 <main>
-                	<div style="position:fixed; left:0px; right:0px; top:0px; bottom:0px; background-image: url('assets/img/home-background.jpg'); background-repeat: no-repeat; background-size: 100% 100%;"></div>
-                	
-                 	<div style="position:fixed; left:0px; right:0px; top:0px; bottom:0px; background-color:rgba(0,0,0,0.5);">
-	                   	<div style="position:absolute; left:0px; right:0px; top:100px; bottom:50%;">
-	                   		<h1 style="color:white; text-align:center; font-size:65px;"><a href="/main" style="color:inherit;">Pathfinder</a></h1>
-	                   	</div>
-	                    <div style="position:absolute; left:0px; right:0px; top:67%; bottom:0px;">
-	                    	<h3 style="color:gray; text-align:center;">개척자</h3>
-	                    	<h2 style="color:white; text-align:center;">거친 땅을 일구어 쓸모 있는 땅으로 만드는 사람.</h2>
-	                    	<h3 style="color:white; text-align:center;">홈페이지 설명 내용</h3>
-	                    	<h4 style="color:gray; text-align:center;">April 28, 2021</h4>
+                	<div class="container-fluid content-container">
+	                	<div style="position:fixed; left:0px; right:0px; top:0px; bottom:0px; background-image: url('assets/img/home-background.jpg'); background-repeat: no-repeat; background-size: 100% 100%;"></div>
+	                	
+	                 	<div style="position:fixed; left:0px; right:0px; top:0px; bottom:0px; background-color:rgba(0,0,0,0.5);">
+		                   	<div style="position:absolute; left:0px; right:0px; top:100px; bottom:50%;">
+		                   		<h1 style="color:white; text-align:center; font-size:65px;"><a href="/main" style="color:inherit;">Pathfinder</a></h1>
+		                   	</div>
+		                    <div style="position:absolute; left:0px; right:0px; top:67%; bottom:0px;">
+		                    	<h3 style="color:gray; text-align:center;">개척자</h3>
+		                    	<h2 style="color:white; text-align:center;">거친 땅을 일구어 쓸모 있는 땅으로 만드는 사람.</h2>
+		                    	<h3 style="color:white; text-align:center;">홈페이지 설명 내용</h3>
+		                    	<h4 style="color:gray; text-align:center;">April 28, 2021</h4>
+		                    </div>
 	                    </div>
-                    </div>
-                    <div style="position:absolute; left:0px; right:0px; top:95%; height:1000px; background-color:white; text-align:center;">
-                    	<div style="position:absolute; left:0px; right:0px; height:50px;">
-                    		<img src="assets/img/arrow_up.png" style="vertical-align:-webkit-baseline-middle;"/>
-                    	</div>
+	                    <div style="position:absolute; left:0px; right:0px; top:95%; height:1000px; background-color:white; text-align:center;">
+	                    	<div style="position:absolute; left:0px; right:0px; height:50px;">
+	                    		<img src="assets/img/arrow_up.png" style="vertical-align:-webkit-baseline-middle;"/>
+	                    	</div>
+	                    </div>
                     </div>
                 </main>
                 

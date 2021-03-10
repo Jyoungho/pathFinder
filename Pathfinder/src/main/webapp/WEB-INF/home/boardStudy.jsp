@@ -114,7 +114,7 @@
                 </nav>
             </div>
             
-            <div id="layoutSidenav_content" style="margin-left:0px;">
+            <div id="layoutSidenav_content">
                 <main>
                 	boardStudy
                 </main>
