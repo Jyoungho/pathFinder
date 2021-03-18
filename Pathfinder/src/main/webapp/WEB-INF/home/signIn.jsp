@@ -9,10 +9,10 @@
         <form action="signIn" method="post" class="loginForm">
             <h2>Login</h2>
             <div class="idForm">
-                <input id = "UserId" name = "UserId" type="text" class="id" placeholder="ID">
+                <input id = "ID" name = "ID" type="text" class="id" placeholder="ID">
             </div>
             <div class="passForm">
-                <input id = "pw" name = "pw" type="password" class="pw" placeholder="PW">
+                <input id = "password" name = "password" type="password" class="pw" placeholder="PW">
             </div>
             <input type = "submit">
             <button type="button" class="btn" onclick="button()">
