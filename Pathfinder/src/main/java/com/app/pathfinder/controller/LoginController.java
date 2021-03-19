@@ -23,9 +23,6 @@ public class LoginController {
 	@RequestMapping("/signIn")
 	public String singIn( @ModelAttribute UserEntity reqBody ){
 		String userId = reqBody.getUserId();
-		// System.out.println("+++++++++++++++");
-		// System.out.println(userId);
-		// String password = reqBody.getPw();
 		UserEntity user = loginService.getUser(userId);
 		System.out.println("+++++++++++++++");
 		System.out.println(user.getUserId());
