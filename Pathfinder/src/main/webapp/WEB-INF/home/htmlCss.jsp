@@ -12,6 +12,10 @@
         <link href="css/styles.css" rel="stylesheet" />
         <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js" crossorigin="anonymous"></script>
+        
+        <link href="https://fonts.googleapis.com/earlyaccess/notosanskr.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/contentsStyles.css">
     </head>
     <body class="sb-nav-fixed">
     
@@ -116,7 +120,141 @@
             
             <div id="layoutSidenav_content">
                 <main>
-                	htmlCss
+                	
+                	<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+					  <div class="carousel-inner">
+					    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+					      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					      <span class="sr-only">Previous</span>
+					    </a>
+					    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+					      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+					      <span class="sr-only">Next</span>
+					    </a>
+					    <div class="carousel-item active item1">
+					      <div class="helper"></div><div class="intro">
+					        <h1>Youtube</h1>
+					        <h2>코딩의 흥미를 줄수있는 유튜브 컨텐츠</h2>
+					        <a href="#">수업찾기</a>
+					      </div>
+					    </div>
+					    <div class="carousel-item item2">
+					      <div class="helper"></div><div class="intro">
+					        <h1>인터넷강의</h1>
+					        <h2>체계적이 커리큘럼으로 탄탄한 코딩실력...</h2>
+					        <a href="#">수업찾기</a>
+					      </div>
+					    </div>
+					    <div class="carousel-item item3">
+					      <div class="helper"></div><div class="intro">
+					        <h1>블로그</h1>
+					        <h2>코딩선배님들의 발자취를 따라갈수있는시간</h2>
+					        <a href="#">수업찾기</a>
+					      </div> 
+					    </div>
+					  </div>
+					</div>
+					
+					<!-- 컨텐츠 박스 -->
+					<div class="container">
+					  <div class="row">
+					    <div class="col-12">
+					      <div class="alert alert-dark course-subject" role="alert">
+					        <strong>졸라 강추하는 유튜브</strong>
+					      </div>
+					    </div>
+					  </div>
+					  <div class="row">
+					    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+					      <a href="#" class="course">
+					        <img src="assets/img/jn.jpg" width="100%" class="course-img">
+					        <div class="info">
+					          <h4>유튜브 지니</h4>
+					          <div class="lecturer">
+					            <img src="assets/img/user.png" width="20" height="20"><span class="name">김동건추천</span>
+					          </div>
+					        </div>
+					      </a>
+					    </div>
+					    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+					      <a href="#" class="course">
+					        <img src="assets/img/jn.jpg" width="100%" class="course-img">
+					        <div class="info">
+					          <h4>유튜브 지니</h4>
+					          <div class="lecturer">
+					            <img src="assets/img/user.png" width="20" height="20"><span class="name">김동건추천</span>
+					          </div>
+					        </div>
+					      </a>
+					    </div>
+					    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+					      <a href="#" class="course">
+					        <img src="assets/img/jn.jpg" width="100%" class="course-img">
+					        <div class="info">
+					          <h4>유튜브 지니</h4>
+					          <div class="lecturer">
+					            <img src="assets/img/user.png" width="20" height="20"><span class="name">김동건추천</span>
+					          </div>
+					        </div>
+					      </a>
+					    </div>
+					    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+					      <a href="#" class="course">
+					        <img src="assets/img/jn.jpg" width="100%" class="course-img">
+					        <div class="info">
+					          <h4>유튜브 지니</h4>
+					          <div class="lecturer">
+					            <img src="assets/img/user.png" width="20" height="20"><span class="name">김동건추천</span>
+					          </div>
+					        </div>
+					      </a>
+					    </div>
+					    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+					      <a href="#" class="course">
+					        <img src="assets/img/jn.jpg" width="100%" class="course-img">
+					        <div class="info">
+					          <h4>유튜브 지니</h4>
+					          <div class="lecturer">
+					            <img src="assets/img/user.png" width="20" height="20"><span class="name">김동건추천</span>
+					          </div>
+					        </div>
+					      </a>
+					    </div>
+					    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+					      <a href="#" class="course">
+					        <img src="assets/img/jn.jpg" width="100%" class="course-img">
+					        <div class="info">
+					          <h4>유튜브 지니</h4>
+					          <div class="lecturer">
+					            <img src="assets/img/user.png" width="20" height="20"><span class="name">김동건추천</span>
+					          </div>
+					        </div>
+					      </a>
+					    </div>
+					    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+					      <a href="#" class="course">
+					        <img src="assets/img/jn.jpg" width="100%" class="course-img">
+					        <div class="info">
+					          <h4>유튜브 지니</h4>
+					          <div class="lecturer">
+					            <img src="assets/img/user.png" width="20" height="20"><span class="name">김동건추천</span>
+					          </div>
+					        </div>
+					      </a>
+					    </div>  
+					    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+					      <a href="#" class="course">
+					        <img src="assets/img/jn.jpg" width="100%" class="course-img">
+					        <div class="info">
+					          <h4>유튜브 지니</h4>
+					          <div class="lecturer">
+					            <img src="assets/img/user.png" width="20" height="20"><span class="name">김동건추천</span>
+					          </div>
+					        </div>
+					      </a>
+					    </div>                                      
+					  </div>
+                	
                 </main>
                 
                 <footer class="py-4 bg-light mt-auto">
@@ -133,14 +271,19 @@
                 </footer>
             </div>
         </div>
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-        <script src="js/scripts.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
-        <script src="assets/demo/chart-area-demo.js"></script>
-        <script src="assets/demo/chart-bar-demo.js"></script>
-        <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
-        <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js" crossorigin="anonymous"></script>
-        <script src="assets/demo/datatables-demo.js"></script>
+        
+<!--         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script> -->
+<!--         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script> -->
+<!--         <script src="js/scripts.js"></script> -->
+<!--         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script> -->
+<!--         <script src="assets/demo/chart-area-demo.js"></script> -->
+<!--         <script src="assets/demo/chart-bar-demo.js"></script> -->
+<!--         <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js" crossorigin="anonymous"></script> -->
+<!--         <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js" crossorigin="anonymous"></script> -->
+<!--         <script src="assets/demo/datatables-demo.js"></script> -->
+        
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
     </body>
 </html>
