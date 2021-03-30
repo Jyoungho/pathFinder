@@ -34,24 +34,24 @@ public class LoginController {
 
 	@PostMapping("/signIn")
 	public String singIn( @ModelAttribute UserEntity userEntity ){
-		return "/WEB-INF/home/signIn.jsp";
+		return "signIn";
 	}
 
 	@PreAuthorize("hasRole('ROLE_MEMBER')")
     @GetMapping("/member/info")
     public String userInfoView() {
-        return "/WEB-INF/home/userInfo.jsp";
+        return "userInfo";
     }
 
 	@PreAuthorize("hasRole('ROLE_ADMIN')")
     @GetMapping("/admin")
     public String adminView() {
-        return "/WEB-INF/home/admin.jsp";
+        return "admin";
     }
 
 	@GetMapping("/denied")
     public String deniedView() {
-        return "/WEB-INF/home/denied.jsp";
+        return "denied";
     }
 
 

@@ -8,7 +8,7 @@ public class TypeScriptController {
 	
 	@RequestMapping("/typeScript")
 	public String typeScript() {
-		return "/WEB-INF/home/typeScript.jsp";
+		return "typeScript";
 	}
 	
 }

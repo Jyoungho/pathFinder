@@ -8,7 +8,7 @@ public class SpringController {
 	
 	@RequestMapping("/spring")
 	public String spring() {
-		return "/WEB-INF/home/spring.jsp";
+		return "spring";
 	}
 	
 }

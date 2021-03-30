@@ -1,4 +1,4 @@
-package com.app.pathfinder.controller;
+package com.app.pathfinder.controller.home;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -8,12 +8,12 @@ public class HomeController {
 	
 	@RequestMapping("/index")
 	public String index() {
-		return "/index.jsp";
+		return "index";
 	}
 	
 	@RequestMapping("/home")
 	public String home() {
-		return "/WEB-INF/home/home.jsp";
+		return "home";
 	}
 	
 }

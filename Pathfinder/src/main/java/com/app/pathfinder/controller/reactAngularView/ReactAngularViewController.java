@@ -8,7 +8,7 @@ public class ReactAngularViewController {
 	
 	@RequestMapping("/reactAngularView")
 	public String reactAngularView() {
-		return "/WEB-INF/home/reactAngularView.jsp";
+		return "reactAngularView";
 	}
 	
 }

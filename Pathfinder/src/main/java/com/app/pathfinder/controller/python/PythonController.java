@@ -8,7 +8,7 @@ public class PythonController {
 	
 	@RequestMapping("/python")
 	public String python() {
-		return "/WEB-INF/home/python.jsp";
+		return "python";
 	}
 	
 }

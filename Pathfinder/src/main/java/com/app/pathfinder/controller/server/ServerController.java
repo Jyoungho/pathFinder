@@ -8,7 +8,7 @@ public class ServerController {
 	
 	@RequestMapping("/server")
 	public String server() {
-		return "/WEB-INF/home/server.jsp";
+		return "server";
 	}
 	
 }

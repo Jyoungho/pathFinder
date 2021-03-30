@@ -1,4 +1,4 @@
-package com.app.pathfinder.controller;
+package com.app.pathfinder.controller.main;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -8,6 +8,6 @@ public class Maincontroller {
 	
 	@RequestMapping("/main")
 	public String main() {
-		return "WEB-INF/home/main.jsp";
+		return "main";
 	}
 }
