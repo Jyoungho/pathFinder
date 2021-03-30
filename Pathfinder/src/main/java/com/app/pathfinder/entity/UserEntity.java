@@ -1,103 +1,58 @@
 package com.app.pathfinder.entity;
 
+import java.time.LocalDateTime;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import lombok.Getter;
+import lombok.Setter;
+
 @Entity
+@Getter
+@Setter
 @Table(name = "USER_MANAGEMENT")
 public class UserEntity {
 
     @Id
     @Column(name = "USER_ID")
-    @GeneratedValue(strategy =  GenerationType.IDENTITY)
     private String userId;
     
     @Column(name = "PW")
     private String pw;
     
-    @Column(name = "NICK_NAME")
+    @Column(name = "NICKNAME")
     private String nickName;
     
     @Column(name = "DEL_FLAG")
     private String delFlag;
     
     @Column(name = "CREATE_DATE")
-    private String createDate;
+    private LocalDateTime createDate;
 
     @Column(name = "CREATE_USER")
-    private String creatUser;
+    private String createUser;
 
     @Column(name = "MODIFY_DATE")
-    private String modifyDate;
+    private LocalDateTime modifyDate;
 
     @Column(name = "MODIFY_USER")
     private String modifyUser;
 
-    public String getUserId() {
-        return userId;
+    public UserEntity() {
     }
 
-    public void setUserId(String userId) {
+    public UserEntity(String userId, String pw, String nickName, String createUser) {
         this.userId = userId;
-    }
-
-    public String getPw() {
-        return pw;
-    }
-
-    public void setPw(String pw) {
         this.pw = pw;
-    }
-
-    public String getNickName() {
-        return nickName;
-    }
-
-    public void setNickName(String nickName) {
         this.nickName = nickName;
+        this.createUser = createUser;
+    }
+    
+    public UserEntity toEntity() {
+        return new UserEntity(userId, pw, nickName, createUser);
     }
 
-    public String getDelFlag() {
-        return delFlag;
-    }
-
-    public void setDelFlag(String delFlag) {
-        this.delFlag = delFlag;
-    }
-
-    public String getCreateDate() {
-        return createDate;
-    }
-
-    public void setCreateDate(String createDate) {
-        this.createDate = createDate;
-    }
-
-    public String getCreatUser() {
-        return creatUser;
-    }
-
-    public void setCreatUser(String creatUser) {
-        this.creatUser = creatUser;
-    }
-
-    public String getModifyDate() {
-        return modifyDate;
-    }
-
-    public void setModifyDate(String modifyDate) {
-        this.modifyDate = modifyDate;
-    }
-
-    public String getModifyUser() {
-        return modifyUser;
-    }
-
-    public void setModifyUser(String modifyUser) {
-        this.modifyUser = modifyUser;
-    }
 }
