@@ -8,7 +8,7 @@ public class DjangoController {
 	
 	@RequestMapping("/django")
 	public String django() {
-		return "/WEB-INF/home/django.jsp";
+		return "django";
 	}
 	
 }

@@ -8,7 +8,7 @@ public class HtmlCssController {
 	
 	@RequestMapping("/htmlCss")
 	public String htmlCss() {
-		return "/WEB-INF/home/htmlCss.jsp";
+		return "htmlCss";
 	}
 	
 }

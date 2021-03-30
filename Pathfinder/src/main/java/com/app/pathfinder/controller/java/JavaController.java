@@ -8,7 +8,7 @@ public class JavaController {
 	
 	@RequestMapping("/java")
 	public String java() {
-		return "/WEB-INF/home/java.jsp";
+		return "java";
 	}
 	
 }

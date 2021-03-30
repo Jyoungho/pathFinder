@@ -8,7 +8,7 @@ public class BackEndOthersController {
 	
 	@RequestMapping("/backEndOthers")
 	public String backEndOthers() {
-		return "/WEB-INF/home/backEndOthers.jsp";
+		return "backEndOthers";
 	}
 	
 }

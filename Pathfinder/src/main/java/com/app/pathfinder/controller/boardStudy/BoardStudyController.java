@@ -8,7 +8,7 @@ public class BoardStudyController {
 	
 	@RequestMapping("/boardStudy")
 	public String boardStudy() {
-		return "/WEB-INF/home/boardStudy.jsp";
+		return "boardStudy";
 	}
 	
 }

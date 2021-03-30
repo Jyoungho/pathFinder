@@ -8,7 +8,7 @@ public class BoardCommunityController {
 	
 	@RequestMapping("/boardCommunity")
 	public String boardCommunity() {
-		return "/WEB-INF/home/boardCommunity.jsp";
+		return "boardCommunity";
 	}
 	
 }

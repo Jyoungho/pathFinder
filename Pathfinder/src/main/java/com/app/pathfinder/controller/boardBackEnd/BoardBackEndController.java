@@ -8,7 +8,7 @@ public class BoardBackEndController {
 	
 	@RequestMapping("/boardBackEnd")
 	public String boardBackEnd() {
-		return "/WEB-INF/home/boardBackEnd.jsp";
+		return "boardBackEnd";
 	}
 	
 }
