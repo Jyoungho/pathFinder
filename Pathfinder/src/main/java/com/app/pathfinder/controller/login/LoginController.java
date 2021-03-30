@@ -18,12 +18,12 @@ public class LoginController {
 	@GetMapping("/login")
 	public String loginView() {
 		
-		return "/WEB-INF/home/login.jsp";
+		return "login";
 	}
 
 	@GetMapping("/signUp")
     public String signUpView() {
-        return "/WEB-INF/home/signUp.jsp";
+        return "signUp";
     }
 
 	@PostMapping("/signUp")
