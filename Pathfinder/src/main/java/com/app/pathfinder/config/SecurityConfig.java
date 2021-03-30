@@ -1,4 +1,4 @@
-package com.app.pathfinder;
+package com.app.pathfinder.config;
 
 import com.app.pathfinder.controller.login.LoginService;
 
