@@ -11,9 +11,6 @@
         <title>Dashboard - SB Admin</title>
         <link href="css/styles.css" rel="stylesheet" />
         <link href="css/board.css" rel="stylesheet" />
-        <link href="css/boardMedia.css" rel="stylesheet" />
-        <link href="css/boardStyle.css" rel="stylesheet" />
-		
         <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js" crossorigin="anonymous"></script>
     </head>
@@ -120,91 +117,53 @@
             
             <div id="layoutSidenav_content">
             
-            
-            
                 <main>
-                
-                	<div class="board_wrap">
-                <div class="board_title">
-                    <strong>게시판</strong>
-                    <p>자유롭게 작성하세요</p>
-                    <div class="board_list_wrap">
-                        <table class="board_list">
-                         <caption>게시판 목록</caption>
-                          <thead>
-                                <tr>
-                                    <th class="b">번호</th>
-                                    <th class="a">제목</th>
-                                    <th class="c">글쓴이</th>
-                                    <th class="d">작성일</th>
-                                    <th class="e">조회</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="b">5</td>  <!-- db변수처리 -->
-                                    <td class="a">
-                                        <a href="/boardFrontEndView">백엔드 추천사이트</a>
-                                    </td>
-                                    <td class="c">관리자</td>
-                                    <td class="d">2021-03-12</td>
-                                    <td class="e">34 </td>
-                                </tr>
-                                <tr>
-                                    <td class="b">4</td>
-                                    <td class="a">
-                                        <a href="/boardFrontEndView">프론트 추천사이트</a>
-                                    </td>
-                                    <td class="c">관리자</td>
-                                    <td class="d">2021-03-12</td>
-                                    <td class="e">5 </td>
-                                </tr>                        <tr>
-                                    <td class="b">3</td>
-                                    <td class="a">
-                                        <a href="/boardFrontEndView">패쓰파인더</a>
-                                    </td>
-                                    <td class="c">코린이</td>
-                                    <td class="d">2021-03-12</td>
-                                    <td class="e">11 </td>
-                                </tr>                        <tr>
-                                    <td class="b">2</td>
-                                    <td class="a">
-                                        <a href="/boardFrontEndView">깃허브 사용법 공유</a>
-                                    </td>
-                                    <td class="c">병아리</td>
-                                    <td class="d">2021-03-12</td>
-                                    <td class="e">52 </td>
-                                </tr>                        <tr>
-                                    <td class="b">1</td>
-                                    <td class="a">
-                                        <a href="/boardFrontEndView">db 어렵 </a>
-                                        </td>
-                                    <td class="c">관리자</td>
-                                    <td class="d">2021-03-12</td>
-                                    <td class="e">102 </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <div class="pagbt">
-                            <div class="paging">
-                                <a href="#" class="btn">  <  이전 </a>
-                                <a href="#" class="num on">1</a>
-                                <a href="#" class="num">2</a>
-                                <a href="#" class="num">3</a>
-                                <a href="#" class="num">4</a>
-                                <a href="#" class="num">5</a>
-                                <a href="#" class="btn"> 다음  ></a>
-                            </div>
-
-                            <div class="bt_wrap">
-                                <a href="/boardFrontEndWrite" class="on">글쓰기</a>
-                            </div>
-                        </div>
-                    </div>
+                	 <div class="board_wrap">
+        <div class="board_title">
+            <strong>게시판</strong>
+            <p>자유롭게 작성하세요</p>
+        </div>
+        <div class="board_view_wrap">
+            <div class="board_view">
+                <div class="title">
+                    제목 기입란..
+                </div>
+                <div class="info">
+                    <dl>
+                        <dt>번호</dt>
+                        <dd>1</dd>
+                    </dl>
+                    <dl>
+                        <dt>글쓴이</dt>
+                        <dd>성훈종</dd>
+                    </dl><dl>
+                        <dt>작성일</dt>
+                        <dd>2021.03.13</dd>
+                    </dl><dl>
+                        <dt>조회</dt>
+                        <dd>13</dd>
+                </div>
+                <div class="cont">
+                    글 내용 기입하는 곳 <br>
+                    글 내용 기입하는 곳 <br>
+                    글 내용 기입하는 곳 <br>
+                    글 내용 기입하는 곳 <br>
+                    글 내용 기입하는 곳 <br>
+                    글 내용 기입하는 곳 <br>
+                    글 내용 기입하는 곳 <br>
+                    글 내용 기입하는 곳 
                 </div>
             </div>
+            <div class="pagbt">
+                <div class="bt_wrap">
+                    <a href="/boardFrontEnd" class="on">목록</a>
+                    <a href="/boardFrontEndEdit" class="onn">수정</a>
+                </div>
+            </div>    
+        </div>
+    </div>
                 </main>
-  
+                
                 <footer class="py-4 bg-light mt-auto">
                     <div class="container-fluid">
                         <div class="d-flex align-items-center justify-content-between small">

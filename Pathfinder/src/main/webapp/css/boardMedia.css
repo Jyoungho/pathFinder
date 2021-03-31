@@ -1,0 +1,55 @@
+@media (max-width: 1000px){
+    .board_wrap {
+        width: 100%;
+        min-width: 320;
+        padding: 0 30px;
+        box-sizing: border-box;
+    }
+
+    .board_list .b,
+    .board_list .c,
+    .board_list .e {
+        display: none;
+    }
+
+    .board_list .d {
+        width: 40%;
+    }
+
+    .board_list .a {
+        text-indent: 10px;
+    }
+    .board_list .top .a {
+    text-indent: 0;
+    }
+
+    .board_view .info dl {
+        width: 50%;
+        padding: 0;
+    }
+    .board_view .info dl :nth-child(-n+2) {
+            margin-bottom: 5px;
+    }
+
+    .board_view .info dl::before {
+        display: none;
+    }
+
+    .board_view .info dl dt,
+    .board_view .info dl dd {
+        font-size: 1.1rem;
+    }
+
+    .board_write .title dt,
+    .board_write .info dt{
+        display: none;
+    }
+    .board_write .title dd{
+        width: 28%;
+    }
+    .board_write .info dd{
+        width: 300%;
+    }
+
+
+}
