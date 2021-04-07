@@ -45,6 +45,8 @@ public class LoginServiceImp implements LoginService{
 	public String save(UserTO userTO) {
 
 		UserEntity userEntity = userTO.toEntity();
+
+        userEntity.setDelFlag("N");
         userEntity.setCreateDate(LocalDateTime.now());
 
         // 비밀번호 암호화

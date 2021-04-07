@@ -42,8 +42,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/**").permitAll();
 
         http.formLogin()
+                .usernameParameter("userId")
+                .passwordParameter("pw")
                 .loginPage("/login")
-                .defaultSuccessUrl("/home2")
+                .defaultSuccessUrl("/main")
                 .permitAll();
 
         http.logout()

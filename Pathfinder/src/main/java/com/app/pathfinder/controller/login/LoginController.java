@@ -21,20 +21,20 @@ public class LoginController {
 		return "login";
 	}
 
-	@GetMapping("/signUp")
-    public String signUpView() {
-        return "signUp";
+	@GetMapping("/signup")
+    public String signupView() {
+        return "signup";
     }
 
-	@PostMapping("/signUp")
-    public String signUp(UserTO userTO) {
+	@PostMapping("/signup")
+    public String signup(UserTO userTO) {
         loginService.save(userTO);
         return "redirect:/login";
     }
 
-	@PostMapping("/signIn")
-	public String singIn( @ModelAttribute UserEntity userEntity ){
-		return "signIn";
+	@PostMapping("/signin")
+	public String singin( @ModelAttribute UserEntity userEntity ){
+		return "signin";
 	}
 
 	@PreAuthorize("hasRole('ROLE_MEMBER')")
