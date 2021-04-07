@@ -97,7 +97,7 @@
                             
                             <div class="collapse" id="freeBoard" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="/boardfrontEnd">Front-End</a>
+                                    <a class="nav-link" href="/boardFrontEnd">Front-End</a>
                                     <a class="nav-link" href="/boardBackEnd">Back-End</a>
                                     <a class="nav-link" href="/boardStudy">Study</a>
                                     <a class="nav-link" href="/boardCommunity">Community</a>
