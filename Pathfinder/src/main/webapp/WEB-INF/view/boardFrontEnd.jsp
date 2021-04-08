@@ -10,7 +10,6 @@
         <meta name="author" content="" />
         <title>Dashboard - SB Admin</title>
         <link href="css/styles.css" rel="stylesheet" />
-        <link href="css/board.css" rel="stylesheet" />
         <link href="css/boardMedia.css" rel="stylesheet" />
         <link href="css/boardStyle.css" rel="stylesheet" />
 		

@@ -1,4 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
 <DOCTYPE HTML5>
 <html>
@@ -23,12 +24,24 @@
             <div class="bottomText">
                 Don't you have ID? <a href="/signup">sign up</a>
             </div>
+            <c:if test="${not empty SPRING_SECURITY_LAST_EXCEPTION}">
+	            <font color="red">
+                    <p>
+                        Your login attempt was not successful due to <br /> 
+                        ${sessionScope["SPRING_SECURITY_LAST_EXCEPTION"].message}
+                    </p> 
+                    <c:remove var="SPRING_SECURITY_LAST_EXCEPTION" scope="session" />
+                </font>
+            </c:if>
         </form>
+        
     </body>
     <script>
-        let button = () => {
-            const form = document.forms[0];
-            form.submit();
-        }
+        
+    let button = () => {
+        const form = document.forms[0];
+        form.submit();
+    }
+
     </script>
 </html>
