@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="kor">
     <head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,26 +9,25 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>Dashboard - SB Admin</title>
-        <link href="/css/styles.css" rel="stylesheet" />
-        <link href="/css/stylesMain.css" rel="stylesheet" />
+        <link href="css/styles.css" rel="stylesheet" />
         <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js" crossorigin="anonymous"></script>
     </head>
     <body class="sb-nav-fixed sb-sidenav-toggled">
-        <!-- header start -->
-        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark header-height">
+    
+        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+            <a class="navbar-brand" href="/home2">Pathfinder</a>
             <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i class="fas fa-bars"></i></button>
-            <div class = "header-title-center">
-                <h1>Path Finder</h1>
-            </div>
-
-            <!-- <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
-                <div style = "color: white; align-items: center;">
-                    <h1>Path Finder</h1>
+            <!-- Navbar Search-->
+            <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
+                <div class="input-group">
+                    <input class="form-control" type="text" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2" />
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" type="button"><i class="fas fa-search"></i></button>
+                    </div>
                 </div>
-            
-            </form> -->
-
+            </form>
+            <!-- Navbar-->
             <ul class="navbar-nav ml-auto ml-md-0">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" id="userDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
@@ -41,78 +40,80 @@
                 </li>
             </ul>
         </nav>
-        <!-- header end -->
-        <!-- body start -->
-        <!-- body end -->
         
-
         <div id="layoutSidenav">
-            <!-- side navigation start -->
             <div id="layoutSidenav_nav">
                 <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                
                     <div class="sb-sidenav-menu">
                         <div class="nav">
-
-                            <div class="sb-sidenav-menu-heading">Menu</div>
+                        
+<!--                             <div CLASS="SB-SIDENAV-MENU-HEADING">HOME</DIV> -->
+<!--                             <A CLASS="NAV-LINK" HREF="INDEX.HTML"> -->
+<!--                                 <DIV CLASS="SB-NAV-LINK-ICON"><I CLASS="FAS FA-TACHOMETER-ALT"></I></DIV> -->
+<!--                                 DASHBOARD -->
+<!--                             </A> -->
                             
-                            <a class="nav-link" href="index.jsp">
-                                <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
-                                Path Finder
-                            </a>
-
-                            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseFrontEnd" aria-expanded="false" aria-controls="collapseFrontEnd">
+                            <div class="sb-sidenav-menu-heading"><a href="/main" style="color:inherit;">Home</a></div>
+                            
+                            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#Front-End" aria-expanded="false" aria-controls="collapseLayouts">
                                 <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
-                                Front-end
+                                Front-End
                                 <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                             </a>
-                            <div class="collapse" id="collapseFrontEnd" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
+                            
+                            <div class="collapse" id="Front-End" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="layout-static.html">HTML, CSS</a>
-                                    <a class="nav-link" href="layout-sidenav-light.html">JavaScript</a>
-                                    <a class="nav-link" href="layout-sidenav-light.html">TypeScript</a>
-                                    <a class="nav-link" href="layout-sidenav-light.html">React, Angular, View</a>
-                                    <a class="nav-link" href="layout-sidenav-light.html">Others</a>
+                                    <a class="nav-link" href="/htmlCss">HTML/CSS</a>
+                                    <a class="nav-link" href="/javaScript">JavaScript</a>
+                                    <a class="nav-link" href="/typeScript">TypeScript</a>
+                                    <a class="nav-link" href="/reactAngularView">React/Angular/View</a>
+                                    <a class="nav-link" href="/frontEndOthers">Others</a>
                                 </nav>
                             </div>
                             
-                            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseBackEnd" aria-expanded="false" aria-controls="collapseBackEnd">
+                            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#Back-End" aria-expanded="false" aria-controls="collapseLayouts">
                                 <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
-                                Back-end
+                                Back-End
                                 <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                             </a>
-                            <div class="collapse" id="collapseBackEnd" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
+                            
+                            <div class="collapse" id="Back-End" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="layout-static.html">Java</a>
-                                    <a class="nav-link" href="layout-sidenav-light.html">python</a>
-                                    <a class="nav-link" href="layout-sidenav-light.html">Spring</a>
-                                    <a class="nav-link" href="layout-sidenav-light.html">Django</a>
-                                    <a class="nav-link" href="layout-sidenav-light.html">Server</a>
-                                    <a class="nav-link" href="layout-sidenav-light.html">Others</a>
+                                    <a class="nav-link" href="/java">Java</a>
+                                    <a class="nav-link" href="/python">Python</a>
+                                    <a class="nav-link" href="/spring">Spring</a>
+                                    <a class="nav-link" href="/django">Django</a>
+                                    <a class="nav-link" href="/server">Server</a>
+                                    <a class="nav-link" href="/backEndOthers">Others</a>
                                 </nav>
                             </div>
-
-                            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseCommunity" aria-expanded="false" aria-controls="collapseCommunity">
+                            
+                            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#freeBoard" aria-expanded="false" aria-controls="collapseLayouts">
                                 <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
                                 자유게시판
                                 <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                             </a>
-                            <div class="collapse" id="collapseCommunity" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
+                            
+                            <div class="collapse" id="freeBoard" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="layout-static.html">Front-end</a>
-                                    <a class="nav-link" href="layout-sidenav-light.html">Back-end</a>
-                                    <a class="nav-link" href="layout-sidenav-light.html">Study</a>
-                                    <a class="nav-link" href="layout-sidenav-light.html">Community</a>
+                                    <a class="nav-link" href="/boardfrontEnd">Front-End</a>
+                                    <a class="nav-link" href="/boardBackEnd">Back-End</a>
+                                    <a class="nav-link" href="/boardStudy">Study</a>
+                                    <a class="nav-link" href="/boardCommunity">Community</a>
                                 </nav>
                             </div>
                             
                         </div>
                     </div>
+                    
                     <div class="sb-sidenav-footer">
-                        Path Finder
+                        <div class="small">Logged in as:</div>
+                        Start Bootstrap
                     </div>
                 </nav>
             </div>
-            <!-- side navigation end -->
+            
             <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid content-container">
