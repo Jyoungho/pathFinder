@@ -1,11 +1,15 @@
 package com.app.pathfinder.controller.login;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
 import com.app.pathfinder.entity.UserEntity;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -20,6 +24,18 @@ public class LoginController {
 	public String loginView() {
 		return "login";
 	}
+
+    @PostMapping("/loginFailure")
+    public String loginFailure(Model model, HttpServletRequest request, HttpServletResponse response ) {
+       
+            System.out.println("loginFailure try 로 지나감");
+            System.out.println(request.getAttribute("loginFailMsg"));
+            
+            model.addAttribute("msg", request.getAttribute("loginFailMsg"));
+            
+
+            return "login";
+    }
 
 	@GetMapping("/signup")
     public String signupView() {

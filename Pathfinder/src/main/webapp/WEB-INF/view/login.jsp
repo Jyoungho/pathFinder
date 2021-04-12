@@ -37,10 +37,16 @@
         
     </body>
     <script>
-        
+    
     let button = () => {
         const form = document.forms[0];
         form.submit();
+    }
+
+    console.log("${msg}");
+    let msg = "${msg}";
+    if( msg.length > 0 ) {
+        alert(msg);
     }
 
     </script>

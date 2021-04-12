@@ -32,7 +32,7 @@ public class LoginServiceImp implements LoginService{
 		Optional<UserEntity> userEntityWrapper = userRepository.findByUserId(userId);
         UserEntity userEntity = userEntityWrapper.orElse(null);
         
-        if( userEntityWrapper.orElse(null) == null ){
+        if( userEntity == null ){
             throw new UsernameNotFoundException("아이디를 찾을 수 없습니다.");
         }
 
