@@ -10,5 +10,21 @@ public class BoardBackEndController {
 	public String boardBackEnd() {
 		return "boardBackEnd";
 	}
+
+	@RequestMapping("/boardBackEndWrite")
+	public String boardBackEndWrite() {
+		return "boardBackEndWrite";
+	
+	}
+	@RequestMapping("/boardBackEndEdit")
+	public String boardBackEndEdit() {
+		return "boardBackEndEdit";
+	
+	}
+	@RequestMapping("/boardBackEndView")
+	public String boardBacktEndView() {
+		return "boardBackEndView";
+	
+	}
 	
 }

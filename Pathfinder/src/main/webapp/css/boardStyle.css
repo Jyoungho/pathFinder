@@ -87,16 +87,8 @@ a {
  margin-left: 0 ;
 }
 
-.bt_wrap a.on::after {
-    top:50%;
-    left:50%;
-    transform: translate(-50%, -50%) rotate(45deg);
-    width: 0;
-    height: 700%;
-   }
-
-.bt_wrap a.on:hover::after {
-    width: 100%;
+.bt_wrap a.on:hover {
+    background:rgb(133, 133, 132);
 }
 
 .bt_wrap a.onn:hover {
