@@ -31,11 +31,19 @@ public class LoginServiceImp implements LoginService{
 
 		Optional<UserEntity> userEntityWrapper = userRepository.findByUserId(userId);
         UserEntity userEntity = userEntityWrapper.orElse(null);
+        
+        if( userEntity == null ){
+            throw new UsernameNotFoundException("아이디를 찾을 수 없습니다.");
+        }
 
         List<GrantedAuthority> authorities = new ArrayList<>();
 
-        authorities.add(new SimpleGrantedAuthority("ROLE_MEMBER"));
-
+        if( "jung".equals(userEntity.getUserId()) ){
+            authorities.add(new SimpleGrantedAuthority("ROLE_ADMIN"));
+        }else{
+            authorities.add(new SimpleGrantedAuthority("ROLE_MEMBER"));
+        }
+   
         return new User(userEntity.getUserId(), userEntity.getPw(), authorities);
 		
     }

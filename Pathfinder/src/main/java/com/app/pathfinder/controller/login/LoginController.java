@@ -1,10 +1,15 @@
 package com.app.pathfinder.controller.login;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
 import com.app.pathfinder.entity.UserEntity;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -17,9 +22,20 @@ public class LoginController {
 
 	@GetMapping("/login")
 	public String loginView() {
-		
 		return "login";
 	}
+
+    @PostMapping("/loginFailure")
+    public String loginFailure(Model model, HttpServletRequest request, HttpServletResponse response ) {
+       
+            System.out.println("loginFailure try 로 지나감");
+            System.out.println(request.getAttribute("loginFailMsg"));
+            
+            model.addAttribute("msg", request.getAttribute("loginFailMsg"));
+            
+
+            return "login";
+    }
 
 	@GetMapping("/signup")
     public String signupView() {
@@ -45,15 +61,25 @@ public class LoginController {
 
 	@PreAuthorize("hasRole('ROLE_ADMIN')")
     @GetMapping("/admin")
-    public String adminView() {
+    public String adminView(@AuthenticationPrincipal UserEntity userEntity) {
+        
+            // // user 정보를 가지고 온다.
+            // UserEntity user = em.createQuery("select u from UserEntity u where u.username = :username", UserEntity.class)
+            //         .setParameter("username", authentication.getName()).getSingleResult();
+    
+            // // group 정보를 가지고 온다.
+            // GroupEntity group = em.createQuery("select g from GroupEntity g where g.idx = :idx", GroupEntity.class)
+            //         .setParameter("idx", user.getGroup().getIdx()).getSingleResult();
+    
+            // model.addAttribute("group", group);
+    
+            // return "user_group";
+        
         return "admin";
     }
 
 	@GetMapping("/denied")
     public String deniedView() {
-        return "denied";
+        return "redirect:/login";
     }
-
-
-
 }

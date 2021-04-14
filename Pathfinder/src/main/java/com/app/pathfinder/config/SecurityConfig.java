@@ -1,6 +1,7 @@
 package com.app.pathfinder.config;
 
 import com.app.pathfinder.controller.login.LoginService;
+import com.app.pathfinder.controller.login.UserLoginFailHandler;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -23,6 +24,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Autowired
     private LoginService loginService;
 
+    @Autowired
+    private UserLoginFailHandler userLoginFailHandler;
+
     @Bean
     public PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
@@ -40,11 +44,12 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/member/**").authenticated()
                 .antMatchers("/admin/**").authenticated()
                 .antMatchers("/**").permitAll();
-
+                
         http.formLogin()
                 .usernameParameter("userId")
                 .passwordParameter("pw")
                 .loginPage("/login")
+                .failureHandler(userLoginFailHandler)
                 .defaultSuccessUrl("/main")
                 .permitAll();
 
@@ -55,11 +60,13 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
         http.exceptionHandling()
                 .accessDeniedPage("/denied");
+
     }
 
     @Override
     public void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth.userDetailsService(loginService).passwordEncoder(passwordEncoder());
     }
+    
 
 }
