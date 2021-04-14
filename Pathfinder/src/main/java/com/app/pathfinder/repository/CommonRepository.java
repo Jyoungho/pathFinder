@@ -9,4 +9,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 public interface CommonRepository extends JpaRepository<CommonCodeEntity, Integer> {
 
     Optional<CommonCodeEntity> findByCode(Integer code);
+
+    Optional<CommonCodeEntity> findByUpperCode(Integer upperCode);
 }
