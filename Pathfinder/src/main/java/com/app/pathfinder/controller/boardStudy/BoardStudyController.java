@@ -10,5 +10,18 @@ public class BoardStudyController {
 	public String boardStudy() {
 		return "boardStudy";
 	}
-	
+
+	@RequestMapping("/boardStudyEdit")
+	public String boardStudyEdit() {
+		return "boardStudyEdit";
+	}	
+	@RequestMapping("/boardStudyWrite")
+	public String boardStudyWrite() {
+		return "boardStudyWrite";
+	}	
+	@RequestMapping("/boardStudyView")
+	public String boardStudyView() {
+		return "boardStudyView";
+	}	
+
 }
