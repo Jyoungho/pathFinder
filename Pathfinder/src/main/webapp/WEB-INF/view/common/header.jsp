@@ -1,4 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#">Pathfinder</a>
@@ -17,12 +18,19 @@
       </ul>
 
       <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="/signup">회원가입<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link inline" href="/login">로그인</a>
-            </li>
+        <c:if test="${empty username}">
+          <li class = "nav-item">
+              <a class="nav-link inline" href="/login">로그인</a>
+          </li>
+        </c:if> 
+        <c:if test="${not empty username}">
+          <li class = "nav-item">
+            ${username} 환영합니다!
+          </li>
+          <li class = "nav-item">
+              <a class="nav-link inline" href="/logout">로그아웃</a>
+          </li>
+        </c:if> 
       </ul>
     </div>
 </nav>
