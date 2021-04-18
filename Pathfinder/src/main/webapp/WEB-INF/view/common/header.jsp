@@ -25,7 +25,7 @@
         </c:if> 
         <c:if test="${not empty username}">
           <li class = "nav-item">
-            ${username} 환영합니다!
+            <div class = "nav-link inline" style = "color : black;">${username} 환영합니다!</div>
           </li>
           <li class = "nav-item">
               <a class="nav-link inline" href="/logout">로그아웃</a>
