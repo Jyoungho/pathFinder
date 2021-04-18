@@ -10,10 +10,13 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-              <a class="nav-link path-finder_nav-link" href="#">Front-end<span class="sr-only">(current)</span></a>
+              <a class="nav-link path-finder_nav-link" href="/htmlCss">Front-end<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Back-end</a>
+              <a class="nav-link" href="/java">Back-end</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/boardFrontEnd">자유게시판</a>
             </li>
       </ul>
 
