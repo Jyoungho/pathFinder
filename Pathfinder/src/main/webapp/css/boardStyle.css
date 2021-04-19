@@ -28,14 +28,6 @@ a {
     margin: 50px auto;
 }
 
-.board_title {
-    margin-bottom: 30px;
-}
-
-.board_title strong {
-    font-size: 3rem;
-}
-
 .board_title p {
     font-size: 1.5rem;
     margin-top: 5px;
